@@ -60,8 +60,7 @@
 }
 .top-info-right button {
 	margin-left: 30px;
-	height: 50px;
-	padding: 0 20px;
+	padding: 13px 20px;
 	border:none;
 	outline:none;
 	background-color: #1AB861;
@@ -85,6 +84,10 @@
 }
 .logo span {
 	display: block;
+}
+.navbar button {
+	display:none;
+	visibility:hidden;
 }
 .nav-item {
 	margin-right: 20px;
@@ -134,4 +137,42 @@
 	background-color: #3A526A;
 	height: 150px;
 	padding: 50px;
+}
+@media screen and (max-width:768px) {
+	.header {
+		height: 150px;
+		text-align:center;
+	}
+	.top-info-left {
+		float:none;
+		display: block;
+		width: 100%;
+	}
+	.top-info-right {
+		float:none;
+		display: block;
+		width: 100%;
+	}
+	.top-info-right button {
+		margin-left: 0;
+		padding: 5px 10px;
+		font-size: 14px;
+		border:none;
+		outline:none;
+		background-color: #1AB861;
+		color:#fff;
+		font-weight:bold;
+		overflow:hidden;
+		border-radius:0;
+	}
+	.navbar button {
+		display:block;
+		visibility:visible;
+	}
+	.carousel-item img {
+		height: 350px;
+	}
+	.carousel-caption {
+		margin-bottom: 20px;
+	}
 }
